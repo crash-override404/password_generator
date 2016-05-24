@@ -6,6 +6,13 @@ Password is generated from matrix, which contains random generated dictionary.
 ### How it works
 
 Generate password is easy. Just call password_generator.py from command line with some arguments:
+
+```
+$ ./password_generator.py [phrase] [salt] [length]
+```
+
+All arguments are mandatory:
+
 * phrase - some word, could be anything, like your girlfriend's name, site name for which you are generating password - whatever
 * salt - some random value - again, it can be anything - PIN-like value eg. 1231, dog's name, twenty 'A' letters
 * password length - remember, length of your password is the key to prevent it from bruteforce attack with tools like Hydra or John The Ripper - 30 and more characters is quite good idea here
