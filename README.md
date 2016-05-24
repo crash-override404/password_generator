@@ -30,6 +30,14 @@ If you'll change matrix - you won't be able to get the same passwords anymore.
 Of course, before you'll start to use this generator, you can generate your own matrix (see matrix_generator.py). Just run it and change content of matrix.py file with your result. Or create your own matrix by hand, if you want :)
 
 
+### What is the idea?
+
+Idea is simple - I just needed some way to generate long passwords with huge entropy using in some simple way.
+My pattern is easy to remember (service domain as phrase, one word as salt and couple fixed length, because not all services accepts eg. 50 chars in passwords)
+
+Even if my password leaks in data breach - I am _almost_, let's say for 99,9999% sure that bruteforce nor any known dictionary attack won't break it.
+
+Of course if it is not saved as plaintext :D But in this case nobody is safe :D
 
 ### Notice
 
@@ -39,9 +47,11 @@ I've used only diggits, upper- and lowercase letters for phrase and salt. You ca
 ### Some additional resources
 
 Password recovery speeds                
+
 http://www.lockdown.co.uk/?pg=combi&s=articles
 
 Of Passwords and People: Measuring the Effect of Password-Composition Policies
-Carnegie Mellon University, Pittsburgh, PA
+Carnegie Mellon University, Pittsburgh, PA              
+
 http://cups.cs.cmu.edu/rshay/pubs/passwords_and_people2011.pdf
 
