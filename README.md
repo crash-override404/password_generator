@@ -22,8 +22,10 @@ ve]zo8PtrGMZmZoFnYvgD8n8PlvuoDIpha2ywqn
 
 ```
 
-*Important* - you will get exactly *THE SAME PASSWORD* from each combination of phrase, salt and length using *THE SAME MATRIX* 
+**Important** - you will get exactly **THE SAME PASSWORD** from each combination of phrase, salt and length using **THE SAME MATRIX**.
+
 If you'll change matrix - you won't be able to get the same passwords anymore.
+
 
 Of course, before you'll start to use this generator, you can generate your own matrix (see matrix_generator.py). Just run it and change content of matrix.py file with your result. Or create your own matrix by hand, if you want :)
 
@@ -32,3 +34,14 @@ Of course, before you'll start to use this generator, you can generate your own 
 ### Notice
 
 I've used only diggits, upper- and lowercase letters for phrase and salt. You can modify this behaviour if you want.
+
+
+### Some additional resources
+
+Password recovery speeds                
+http://www.lockdown.co.uk/?pg=combi&s=articles
+
+Of Passwords and People: Measuring the Effect of Password-Composition Policies
+Carnegie Mellon University, Pittsburgh, PA
+http://cups.cs.cmu.edu/rshay/pubs/passwords_and_people2011.pdf
+
