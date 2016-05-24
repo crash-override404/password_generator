@@ -57,7 +57,7 @@ Password recovery speeds
 
 http://www.lockdown.co.uk/?pg=combi&s=articles
 
-Of Passwords and People: Measuring the Effect of Password-Composition Policies
+Of Passwords and People: Measuring the Effect of Password-Composition Policies                    
 Carnegie Mellon University, Pittsburgh, PA              
 
 http://cups.cs.cmu.edu/rshay/pubs/passwords_and_people2011.pdf
