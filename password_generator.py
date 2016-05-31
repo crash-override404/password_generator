@@ -6,18 +6,22 @@ from matrix import matrix
 
 
 def get_char_from_matrix(x, y):
+    """Returns char from matrix from position [x][y]"""
     return matrix[x][y]
 
 
 def update_seed_position(seed_length, seed_pos):
+    """Increments actual position in seed"""
     return 0 if seed_pos + 1 == seed_length else seed_pos + 1
 
 
 def update_salt_position(salt_length, salt_pos):
+    """Increments actual position in salt"""
     return 0 if salt_pos + 1 == salt_length else salt_pos + 1
 
 
 def generate():
+    """Generates password from seed and salt"""
     generated = ""
 
     # length of seed:
