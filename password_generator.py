@@ -10,14 +10,9 @@ def get_char_from_matrix(x, y):
     return matrix[x][y]
 
 
-def update_seed_position(seed_length, seed_pos):
-    """Increments actual position in seed"""
-    return 0 if seed_pos + 1 == seed_length else seed_pos + 1
-
-
-def update_salt_position(salt_length, salt_pos):
-    """Increments actual position in salt"""
-    return 0 if salt_pos + 1 == salt_length else salt_pos + 1
+def update_position(length, pos):
+    """Increments actual cursor position in salt or seed"""
+    return 0 if pos + 1 == length else pos + 1
 
 
 def generate():
@@ -36,8 +31,9 @@ def generate():
         x = ord(seed[seed_pos]) - 1
         y = ord(salt[salt_pos]) - 1
         generated += get_char_from_matrix(x, y)
-        seed_pos = update_seed_position(seed_length, seed_pos)
-        salt_pos = update_salt_position(salt_length, salt_pos)
+
+        seed_pos = update_position(seed_length, seed_pos)
+        salt_pos = update_position(salt_length, salt_pos)
 
     return generated
 
