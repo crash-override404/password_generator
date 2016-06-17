@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-This script generates passwords based on three arguments passed:
+This program generates passwords based on three arguments passed:
 * seed - which can be any string, eg. website domain
 * salt - salt, which together with seed provides X and Y position for
 char matrix
