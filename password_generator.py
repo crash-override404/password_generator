@@ -1,5 +1,19 @@
 #!/usr/bin/env python
+"""
+This script generates passwords based on three arguments passed:
+* seed - which can be any string, eg. website domain
+* salt - salt, which together with seed provides X and Y position for
+char matrix
+* length - which is simply the length of generated password
 
+Sample usage:
+./password_generator.py facebook salt123 40
+
+Output:
+hz8s=tdmSD<\wdBmSqivGBZ42KX3LZokvS?TXoh
+
+which is pretty strong password, don't you think? :)
+"""
 import sys
 
 from matrix import matrix
@@ -19,15 +33,15 @@ def generate():
     """Generates password from seed and salt"""
     generated = ""
 
-    # length of seed:
+    # pass_length of seed:
     seed_length = len(seed)
     seed_pos = 0
 
-    # length of salt:
+    # pass_length of salt:
     salt_length = len(salt)
     salt_pos = 0
 
-    for i in range(0, int(length) - 1):
+    for i in range(0, int(pass_length) - 1):
         x = ord(seed[seed_pos]) - 1
         y = ord(salt[salt_pos]) - 1
         generated += get_char_from_matrix(x, y)
@@ -39,10 +53,10 @@ def generate():
 
 
 if __name__ == "__main__":
-    # get seed, salt and password length from ARGS
+    # get seed, salt and password pass_length from ARGS
     seed = sys.argv[1]
     salt = sys.argv[2]
-    length = sys.argv[3]
+    pass_length = sys.argv[3]
 
     generated_password = generate()
     print generated_password
