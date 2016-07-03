@@ -36,6 +36,11 @@ If you'll change matrix - you won't be able to get the same passwords anymore.
 
 Of course, before you'll start to use this generator, you can generate your own matrix (see matrix_generator.py). Just run it and change content of matrix.py file with your result. Or create your own matrix by hand, if you want :)
 
+You can do this in by executing this command in command line:
+
+```
+$ echo "matrix = `./matrix_generator.py`" > matrix.py
+```
 
 ### What is the idea?
 
